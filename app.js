@@ -53,20 +53,56 @@
 // for (let i = 0; i < books.length; i++) {
 //   console.log(books[i].title.toUpperCase())
 // }
-const n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// n.forEach(function (params, i) {
+//   console.log(params, i);
+// });
+// n.forEach(function (params) {
+//   if (params % 2 === 0) {
+//     // console.log(params);
+//   }
+// });
+// function printTriple(params) {
+//   // return params * 3;
+//   // console.log(params * 3);
+// }
+// n.forEach(printTriple);
+// const books = [
+//   {
+//     title: "Good Omens",
+//     authors: ["Terry Pratchett", "Neil Gaiman"],
+//     rating: 4.25,
+//   },
+//   {
+//     title: "Bone: The Complete Edition",
+//     authors: ["Jeff Smith"],
+//     rating: 4.42,
+//   },
+//   {
+//     title: "American Gods",
+//     authors: ["Neil Gaiman"],
+//     rating: 4.11,
+//   },
+//   {
+//     title: "A Gentleman in Moscow",
+//     authors: ["Amor Towles"],
+//     rating: 4.36,
+//   },
+// ];
+// // books.forEach(function (params) {
+// //   console.log(params.rating);
+// // });
+// for (const b of books) {
+//   console.log(b.title);
+// }
+const n = [1, 2, 3];
 n.forEach(function (params, i) {
-  console.log(params, i);
+  console.log(i, params);
 });
-n.forEach(function (params) {
-  if (params % 2 === 0) {
-    // console.log(params);
-  }
-});
+n.forEach(printTriple);
 function printTriple(params) {
-  // return params * 3;
   // console.log(params * 3);
 }
-n.forEach(printTriple);
 const books = [
   {
     title: "Good Omens",
@@ -89,9 +125,14 @@ const books = [
     rating: 4.36,
   },
 ];
-// books.forEach(function (params) {
-//   console.log(params.rating);
-// });
+books.forEach(function (book) {
+  // console.log(book.title.toUpperCase());
+});
 for (const b of books) {
-  console.log(b.title);
+  // console.log(b.title.toUpperCase());
+}
+
+for (let i = 0; i < books.length; i++) {
+  const element = books[i];
+  // console.log(element.title.toUpperCase());
 }
